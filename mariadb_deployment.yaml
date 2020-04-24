@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: mariadb
-        image: mariadb:10.4-bionic
+        image: mariadb:10.5.2-bionic
         args:
         # if we deploy on a block device make sure mysql doesn't think lost+found is db folder
           - "--ignore-db-dir=lost+found"
