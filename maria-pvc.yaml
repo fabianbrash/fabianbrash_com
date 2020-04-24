@@ -3,9 +3,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: nfs-pvc-maria
 spec:
-  storageClassName: nfs-storageclass # must be the same as storage-class
+  storageClassName: do-block-storage # must be the same as storage-class
   accessModes:
     - ReadWriteOnce #  must be the same as PersistentVolume
   resources:
     requests:
-      storage: 1Gi
+      storage: 8Gi
