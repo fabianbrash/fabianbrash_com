@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: nfs-pvc-maria
+  name: maria-pvc
 spec:
   storageClassName: do-block-storage # must be the same as storage-class
   accessModes:
