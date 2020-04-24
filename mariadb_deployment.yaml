@@ -35,10 +35,10 @@ spec:
           - "--ignore-db-dir=lost+found"
         resources:
           requests:
-            memory: "1Gi"
+            memory: "512Mi"
             cpu: "600m"
           limits:
-            memory: "1Gi"
+            memory: "512Mi"
             cpu: "800m"
         ports:
         - containerPort: 3306
