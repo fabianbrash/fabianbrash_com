@@ -1,5 +1,5 @@
 apiVersion: autoscaling/v1
-Kind: HorizontalPodAutoscaler
+kind: HorizontalPodAutoscaler
 metadata:
   name: wp
 spec:
