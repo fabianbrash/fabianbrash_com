@@ -2,13 +2,15 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: wp-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
 spec:
   tls:
   - hosts:
-    - fabianbrash.com
+    - www.fabianbrash.com
     secretName: tlssecret
   rules:
-  - host: fabianbrash.com
+  - host: www.fabianbrash.com
     http:
       paths:
       - path: /
