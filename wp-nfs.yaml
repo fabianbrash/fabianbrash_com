@@ -34,11 +34,11 @@ spec:
         image: wordpress:5.4 # Very important
         resources:
           requests:
-            memory: "64Mi"
-            cpu: "100m"
+            memory: "128Mi"
+            cpu: "500m"
           limits:
-            memory: "64Mi"
-            cpu: "100m"
+            memory: "256Mi"
+            cpu: "600m"
         ports:
         - containerPort: 80
         env:
