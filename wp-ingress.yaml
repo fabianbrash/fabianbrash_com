@@ -5,10 +5,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - cafe.example.com
+    - fabianbrash.com
     secretName: tlssecret
   rules:
-  - host: wp-test.alexander.io
+  - host: fabianbrash.com
     http:
       paths:
       - path: /
