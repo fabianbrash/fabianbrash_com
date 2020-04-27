@@ -8,9 +8,10 @@ spec:
   tls:
   - hosts:
     - www.fabianbrash.com
+    - fabianbrash.com
     secretName: tlssecret
   rules:
-  - host: www.fabianbrash.com
+  - host: fabianbrash.com
     http:
       paths:
       - path: /
