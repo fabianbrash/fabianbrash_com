@@ -8,11 +8,11 @@ spec:
     kind: Deployment
     name: wp
   minReplicas: 2
-  maxReplicas: 4
+  maxReplicas: 5
   metrics:
   - type: Resource
     resource:
       name: memory
       target:
         type: AverageValue
-        averageValue: 150Mi
+        averageValue: 500Mi
