@@ -4,6 +4,7 @@ metadata:
   name: wp-ingress
   annotations:
     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-body-size: 10m #for uploads
 spec:
   tls:
   - hosts:
