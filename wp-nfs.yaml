@@ -32,6 +32,13 @@ spec:
       containers:
       - name: wp
         image: wordpress:5.4.1 # Very important
+        readinessProbe:
+          tcpSocket:
+            port: 80
+          initialDelaySeconds: 5
+        livenessProbe:
+          tcpSocket:
+            port: 80
         resources:
           requests:
             memory: "100Mi"
