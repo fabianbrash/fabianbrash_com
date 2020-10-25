@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: wp
-        image: wordpress:5.4.1 # Very important
+        image: wordpress:5.5.1 # Very important
         readinessProbe:
           tcpSocket:
             port: 80
