@@ -33,11 +33,13 @@ spec:
       - name: wp
         image: wordpress:5.5.1 # Very important
         readinessProbe:
-          tcpSocket:
+          httpGet:
+            path: /health
             port: 80
           initialDelaySeconds: 5
         livenessProbe:
-          tcpSocket:
+          httpGet:
+            path: /health
             port: 80
           initialDelaySeconds: 5
           periodSeconds: 30
