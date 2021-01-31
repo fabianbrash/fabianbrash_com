@@ -42,12 +42,12 @@ spec:
             path: /health
             port: 80
           initialDelaySeconds: 5
-        livenessProbe:
-          httpGet:
-            path: /health
-            port: 80
-          initialDelaySeconds: 5
-          periodSeconds: 30
+        #livenessProbe:
+          #httpGet:
+            #path: /health
+            #port: 80
+          #initialDelaySeconds: 5
+          #periodSeconds: 30
         resources:
           requests:
             memory: "400Mi"
