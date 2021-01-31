@@ -37,11 +37,11 @@ spec:
       containers:
       - name: wp
         image: wordpress:5.6.0 # Very important
-        readinessProbe:
-          httpGet:
-            path: /health
-            port: 80
-          initialDelaySeconds: 5
+        #readinessProbe:
+          #httpGet:
+            #path: /health
+            #port: 80
+          #initialDelaySeconds: 5
         #livenessProbe:
           #httpGet:
             #path: /health
